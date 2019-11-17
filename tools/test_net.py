@@ -79,3 +79,4 @@ if __name__ == '__main__':
                 word_instances, os.path.splitext(im_name)[0],
                 args.results_dir, cfg.RESULTS_SEPARATOR
             )
+            img_vis=vis(im_original,word_instances)#这样输出有BB的图？
