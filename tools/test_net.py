@@ -79,6 +79,7 @@ if __name__ == '__main__':
                 word_instances, os.path.splitext(im_name)[0],
                 args.results_dir, cfg.RESULTS_SEPARATOR
             )
+            #these codes are added by user：sisrfeng
             img_vis=vis(im_original,word_instance)
             vis_dir=args.results_dir
             if os.path.exists(vis_dir):
