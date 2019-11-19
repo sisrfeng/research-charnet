@@ -79,4 +79,12 @@ if __name__ == '__main__':
                 word_instances, os.path.splitext(im_name)[0],
                 args.results_dir, cfg.RESULTS_SEPARATOR
             )
-            img_vis=vis(im_original,word_instances)#这样输出有BB的图？
+            img_vis=vis(im_original,word_instance)
+            vis_dir=args.results_dir
+            if os.path.exists(vis_dir):
+                print('img_vis will be in'+vis_dir+'/')
+                cv2.imwrite(vis_dir+'/'+img_name, img _vis)
+            else:
+                # not necessary?
+            
+
